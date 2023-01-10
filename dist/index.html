@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        .success .error {
+            color: #fff;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+        .success {
+            background-color: green;
+        }
+        .error {
+            background-color: red;
+        }
+        input:hover {
+            cursor: pointer;
+        }
+    </style>
+    <title>Book List</title>
     <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>
-    <h1 class="bg-slate-400">test</h1>
+    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <h1 class="mb-10 text-center uppercase font-semibold text-lg">Add Book</h1>
+        <form class="mb-0 space-y-6">
+            <div class="mt-1">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+            </div>
+            <div class="mt-1">
+                <label for="title">Author</label>
+                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+            </div>
+            <div class="mt-1">
+                <label for="title">ISBN#</label>
+                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" class="w-full bg-slate-400">
+            </div>
+        </form>
+        <table class="w-full mt-10">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
 </body>
 </html>
