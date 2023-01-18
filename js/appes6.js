@@ -25,7 +25,7 @@ class UI {
     showAlert(message, className) {
         // Create div
         const div = document.createElement('div');
-        // Add class
+        // Add classes
         div.className = `alert ${className}`;
         // Add text
         div.appendChild(document.createTextNode(message));
@@ -55,6 +55,23 @@ class UI {
     }
 }
 
+// Local Storage Class
+class Store {
+    static getBooks() {
+
+    }
+    static displayBooks() {
+
+    }
+    static addBook() {
+
+    }
+
+    static removeBook() {
+
+    }
+}
+
 // Event Listener for add book
 document.getElementById('book-form').addEventListener('submit',
 function(e){
@@ -70,19 +87,16 @@ function(e){
     // Instantiate UI
     const ui = new UI();
 
-    console.log(ui);
-
     // Validate
     if(title === '' || author === '' || isbn === ''){
     ui.showAlert('Please fill in all fields', 'error');
     } else {
-    };
-
     // Add book to list
     ui.addBookToList(book);
 
     // Show success
     ui.showAlert('Book Added!', 'success');
+    };
 
     // Clear field
     ui.clearFields();
