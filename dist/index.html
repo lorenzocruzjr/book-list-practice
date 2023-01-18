@@ -12,9 +12,13 @@
         }
         .success {
             background-color: green;
+            color: #fff;
+            padding: 5px;
         }
         .error {
             background-color: red;
+            color: #fff;
+            padding: 5px;
         }
         input:hover {
             cursor: pointer;
@@ -24,23 +28,23 @@
     <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="container mt-8 sm:mx-auto sm:w-full sm:max-w-md font-sans">
         <h1 class="mb-10 text-center uppercase font-semibold text-lg">Add Book</h1>
-        <form class="mb-0 space-y-6">
+        <form class="mb-0 space-y-6" id="book-form">
             <div class="mt-1">
                 <label for="title">Title</label>
-                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+                <input type="text" id="title" class="w-full px-3 py-2 bg-slate-100">
             </div>
             <div class="mt-1">
-                <label for="title">Author</label>
-                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="w-full px-3 py-2 bg-slate-100">
             </div>
             <div class="mt-1">
-                <label for="title">ISBN#</label>
-                <input type="text" id="title" class="w-full border-black-100 px-3 py-2 bg-slate-100">
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="w-full px-3 py-2 bg-slate-100">
             </div>
-            <div class="submit">
-                <input type="submit" value="Submit" class="w-full bg-slate-400">
+            <div>
+                <input type="submit" value="Submit" class="w-full bor r-2 rounded-full uppercase bg-cyan-500 shadow-cyan-500/50">
             </div>
         </form>
         <table class="w-full mt-10">
@@ -51,7 +55,9 @@
                     <th>ISBN#</th>
                 </tr>
             </thead>
+            <tbody id="book-list"></tbody>
         </table>
     </div>
+    <script src="/js/appes6.js"></script>
 </body>
 </html>
