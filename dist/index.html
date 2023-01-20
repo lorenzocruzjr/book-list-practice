@@ -11,7 +11,7 @@
             margin: 5px 0 15px 0;
         }
         .success {
-            background-color: green;
+            background-color: rgb(22 101 52);
             color: #fff;
             padding: 5px;
         }
@@ -23,8 +23,14 @@
         input:hover {
             cursor: pointer;
         }
+        .closeBtn {
+            text-align: right;
+        }
+        .closeBtn a {
+            color: rgb(220 38 38);
+        }
     </style>
-    <title>Book List</title>
+    <title>Book List | For Practice Only</title>
     <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>
@@ -44,7 +50,7 @@
                 <input type="text" id="isbn" class="w-full px-3 py-2 bg-slate-100">
             </div>
             <div class="delete text-gray-300">
-                <input type="submit" value="Submit" class="w-full bor r-2 rounded-full uppercase bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                <input type="submit" value="Submit" class="font-medium px-1 py-1 w-full bor r-2 rounded-full uppercase bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
             </div>
         </form>
         <table class="w-full mt-10">

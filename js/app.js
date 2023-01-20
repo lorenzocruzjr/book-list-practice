@@ -135,7 +135,7 @@ class UI {
         <td class="text-center">${book.title}</td>
         <td class="text-center">${book.author}</td>
         <td class="text-center">${book.isbn}</td>
-        <td><a href="#" class="delete">X</a></td>
+        <td class="closeBtn"><a href="#" class="delete">REMOVE</a></td>
         `;
         list.appendChild(row);
     }
