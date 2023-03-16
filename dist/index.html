@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List | For Practice Only</title>
+    <link rel="stylesheet" href="/public/styles.css">
     <style>
         .success .error {
             color: #fff;
@@ -30,30 +32,28 @@
             color: rgb(220 38 38);
         }
     </style>
-    <title>Book List | For Practice Only</title>
-    <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>
     <div class="container mt-8 sm:mx-auto sm:w-full sm:max-w-md font-sans">
-        <h1 class="mb-10 text-center uppercase font-semibold text-lg">Add Book</h1>
+        <h1 class="mb-10 text-center uppercase font-semibold text-xl">Add Book</h1>
         <form class="mb-0 space-y-6" id="book-form">
-            <div class="mt-1">
+            <div class="mt-1 uppercase">
                 <label for="title">Title</label>
                 <input type="text" id="title" class="w-full px-3 py-2 bg-slate-100">
             </div>
-            <div class="mt-1">
+            <div class="mt-1 uppercase">
                 <label for="author">Author</label>
                 <input type="text" id="author" class="w-full px-3 py-2 bg-slate-100">
             </div>
-            <div class="mt-1">
+            <div class="mt-1 uppercase">
                 <label for="isbn">ISBN#</label>
                 <input type="text" id="isbn" class="w-full px-3 py-2 bg-slate-100">
             </div>
             <div class="delete text-gray-300">
-                <input type="submit" value="Submit" class="font-medium px-1 py-1 w-full bor r-2 rounded-full uppercase bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+                <input type="submit" value="Submit" class="text-lg font-medium h-10 px-1 py-1 w-full bor r-2 rounded-full uppercase bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
             </div>
         </form>
-        <table class="w-full mt-10">
+        <table class="w-full mt-10 uppercase">
             <thead>
                 <tr>
                     <th>Title</th>
